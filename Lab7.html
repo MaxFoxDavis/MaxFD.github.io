@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<html
 <head>
-	<title>Lab 7: Max FoxDavis</title>
 	
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
 	 <script> src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -56,7 +54,7 @@ img {
 	}).addTo(map);
 	
 	var polygonDFT = L.polygon([
-		[36.09589, 75.45157],		
+		[36.171064, -75.754542],		
 		[42.1205, -102.8685],
 		[42.1205, -102.867],
 		[42.1195, -102.867]
@@ -70,15 +68,13 @@ img {
 	polyline.addTo(map);
 	
 	
-	polygonDFT.bindPopup("<h4>");
-	markerRunza.bindPopup("<h4>");
-	markerBean.bindPopup("<h4><h4>");
-	markerBeer.bindPopup("<h4></h4>");
-	markerCarnegie.bindPopup("<h4><a </a></h4>");
+	markerRunza.bindPopup("<h4>There are beaches and nice restaruants.");
+	markerBean.bindPopup("<h4>The town of Duck is small and quiet, not much goes on here.</h4>");
+	markerBeer.bindPopup("<h4>Lots of people come and visit in the summertime, when it's nice and warm.</h4>");
 	circleCarhenge.bindPopup("<h4>
 	
 	var popupScale = L.popup()
-		.setLatLng([42.11939, -102.84848])
+		.setLatLng([36.171522, -75.746605])
 		.setContent("")
 		.openOn(map);
 	
