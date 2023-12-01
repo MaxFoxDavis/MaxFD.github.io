@@ -34,13 +34,11 @@ img {
 <div id="map"></div>
 <script>
 	
-	var map = L.map('map').setView([36°10'16.2"N 75°45'04.0"W], 14);
-
-	var wmsLayer = L.tileLayer.wms('https://basemap.nationalmap.gov/arcgis/services/USGSImageryOnly/MapServer/WMSServer', {
-    layers: '0', 
-	maxZoom: 16,
-	attribution: "<a href='https://www.usgs.gov/faqs/where-can-i-find-list-urls-national-map-services'>USGS</a>"
-}).addTo(map);
+	   var map = L.map("map").setView([39.849312,-104.673828], 10);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
 	
 	
