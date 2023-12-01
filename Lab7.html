@@ -42,12 +42,12 @@ img {
 
 	
 	
-	var markerRunza = L.marker([36.09, -75.45]).addTo(map);
-	var markerBean = L.marker([42.10919, -102.89675]).addTo(map);
-	var markerCarnegie = L.marker([42.09827, -102.87243]).addTo(map);
-	var markerBeer = L.marker([42.097012, -102.860264]).addTo(map);
+	var markerRunza = L.marker([36.09,, -75.45]).addTo(map);
+	var markerBean = L.marker([36.09473, 75.45123]).addTo(map);
+	var markerCarnegie = L.marker([36.10187, 75.45248]).addTo(map);
+	var markerBeer = L.marker([36.10198, 75.44482]).addTo(map);
 	
-	var circleCarhenge = L.circle([42.14217, -102.85794], {
+	var circleCarhenge = L.circle([36.10057, 75.45183], {
 		color: 'blue',
 		fillColor: 'yellow',
 		weight: 5,
@@ -56,11 +56,11 @@ img {
 	}).addTo(map);
 	
 	var polygonDFT = L.polygon([
-		[42.1195, -102.8685],		
+		[36.09589, 75.45157],		
 		[42.1205, -102.8685],
 		[42.1205, -102.867],
 		[42.1195, -102.867]
-	], {color: 'blue', fillColor: 'yellow',	weight: 5,
+	], {color: 'orange', fillColor: 'yellow',	weight: 4,
 		fillOpacity: .2, lineJoin: 'square'} ).addTo(map);
 	
 	var polyline = L.polyline([	
@@ -70,17 +70,16 @@ img {
 	polyline.addTo(map);
 	
 	
-	polygonDFT.bindPopup("<h4>Dobby's Frontier Town</h4>See what olden-time life was like on the plains in this volunteer-run collection of old buildings and artifacts");
-	markerRunza.bindPopup("<h4>Runza Restaurant</h4>A chain restaurant that serves the Nebraska favorite, kraut rolls.");
-	markerBean.bindPopup("<h4>New Alliance Bean & Grain Co<h4>");
-	markerBeer.bindPopup("<h4>Brewery 719</h4>");
-	markerCarnegie.bindPopup("<h4><a href='https://www.carnegieartscenter.com/'>Carnegie Art Center</a></h4>");
-	circleCarhenge.bindPopup("<h4>Carhenge</h4>'The Nebraska answer to Stonehenge'. Instead of stones, it is a druid circle made of old cars.<br><img src='carhengeSm.jpg'><br>Photo by JH, taken on his last vacation.");
-	polyline.bindPopup("The length of this line is 1 mile");
+	polygonDFT.bindPopup("<h4>");
+	markerRunza.bindPopup("<h4>");
+	markerBean.bindPopup("<h4><h4>");
+	markerBeer.bindPopup("<h4></h4>");
+	markerCarnegie.bindPopup("<h4><a </a></h4>");
+	circleCarhenge.bindPopup("<h4>
 	
 	var popupScale = L.popup()
 		.setLatLng([42.11939, -102.84848])
-		.setContent("The length of this line is 1 mile")
+		.setContent("")
 		.openOn(map);
 	
 	var popup = L.popup();
@@ -89,6 +88,6 @@ img {
 
 </script>
 
-<p>If you see a webpage about Alliance, Nebraska, it will most certainly mention Carhenge. This map shows the location of that spectacle as well as a few other locales in town.</p>
+<p>This is the town of Duck, where I went every summer as a kid. A quiet beach town with some fun shops and great donuts..</p>
 </body>
 </html>
