@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>...</title> 
+    <title>My Button</title> 
     <style>
       …
     </style>
@@ -16,10 +16,64 @@
      });
 </script>
   </head>
-
-  <body>
+<body>
 …
-  </body>
+
+<button id="button1">Click here for magic</button>
+
+…
+
+   <script>
+    
+     $(document).ready( function() {
+
+        // your code will go in here.
+
+        $("#button1").click( function() {
+           // if someone clicks on button1, this runs!
+
+        });
+
+     });
+
+  </script>
+<script>
+    
+     $(document).ready( function() {
+
+        // your code will go in here.
+
+        $("#button1").click( function() {
+           // if someone clicks on button1, this runs!
+           console.log("someone clicked on button1.");
+
+           $("img").toggle();
+        });
+
+     });
+
+  </script>
+<div id="hidden_text">
+   <button id="appear">Click here to see the hidden text!</button>
+</div>
+
+<script>
+    
+     $(document).ready( function() {
+
+        // your code will go in here.
+…
+        $("#appear").click( function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Live Long and Prosper.");
+        });
+…
+     });
+
+  </script>
+
+</body>
 </html>
 
 
