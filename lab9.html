@@ -85,9 +85,7 @@ var layerControl = L.control.layers(baseMaps, null).addTo(map);
 		    fillColor : answer,
 		    weight : 1,
 		    opacity : 1,
-		    color : 'white'
-		    dashArray : '3',
-		    fillOpacity : 0.7
+		    color : 'white'		   
 	    };
     return styleReturn;
 	}
@@ -95,7 +93,10 @@ var layerControl = L.control.layers(baseMaps, null).addTo(map);
 		$.getJSON('./acs_denver_2021.geojson', function(data) {
 			//convert the file (data) into a layer
 			acsDenver2021Layer = L.geoJSON(data, 
-						       {style: style1}
+						       {style: style1,
+						       onEachFeature: function(feature, layer) {
+						       }
+							       }
 						      ).addTo(map);
 			
 			map.panTo(acsDenver2021Layer.getBounds().getCenter());
